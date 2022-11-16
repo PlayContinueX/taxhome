@@ -6,6 +6,9 @@ import 'package:taxhome/webpage_main.dart';
 final isWebMobile = kIsWeb &&
     (defaultTargetPlatform == TargetPlatform.iOS ||
         defaultTargetPlatform == TargetPlatform.android);
+double textTitle_size = 35.sp;
+double textSubTitle_size = 20.sp;
+double textNormal_size = 15.sp;
 
 void main() => runApp(const WebApp());
 
@@ -23,13 +26,10 @@ class WebApp extends StatelessWidget {
             home: const WebPage(),
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-                useMaterial3: true,
-                brightness: Brightness.light,
-                fontFamily: 'Happiness-Sans',
-                appBarTheme: const AppBarTheme(
-                  centerTitle: true,
-                  elevation: 10,
-                )));
+              useMaterial3: true,
+              brightness: Brightness.light,
+              fontFamily: 'Happiness-Sans',
+            ));
       },
     );
   }
